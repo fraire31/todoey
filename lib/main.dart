@@ -18,7 +18,10 @@ class MyApp extends StatelessWidget {
         return TaskData();
       },
       child: const MaterialApp(
-        home: TasksScreen(),
+        debugShowCheckedModeBanner: false,
+        home: SafeArea(
+          child: TasksScreen(),
+        ),
       ),
     );
   }

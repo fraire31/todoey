@@ -17,6 +17,11 @@ class TasksScreen extends StatelessWidget {
         child: const Icon(Icons.add),
         onPressed: () {
           showModalBottomSheet(
+            shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(
+              topRight: Radius.circular(15.0),
+              topLeft: Radius.circular(15.0),
+            )),
             context: context,
             builder: (context) => const AddTaskScreen(),
           );
